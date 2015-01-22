@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#669966">
+<RelativeLayout
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TYTUŁ:"
+        android:id="@+id/addTitleTEXT"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addTitleTEXT"
+        android:id="@+id/addTitleEDT"
+        android:hint="nazwij swoje danie..."
+        android:background="#FFFFFF"
+        android:singleLine="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OPIS:"
+        android:id="@+id/addIntroTXT"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/addTitleEDT"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addIntroTXT"
+        android:id="@+id/addIntroEDT"
+        android:hint="krótko je opisz..."
+        android:background="#FFFFFF"
+        android:singleLine="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SKŁADNIKI:"
+        android:id="@+id/addIngredTEXT"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/addIntroEDT"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addIngredTEXT"
+        android:id="@+id/addIngredEDT"
+        android:hint="podaj skladniki..."
+        android:background="#FFFFFF"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PRZYGOTOWANIE:"
+        android:id="@+id/addStepsTEXT"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/addIngredEDT"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addStepsTEXT"
+        android:id="@+id/addStepsEDT"
+        android:hint="podaj etapy przygotowania..."
+        android:background="#FFFFFF"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/empty"
+        android:layout_below="@id/addStepsEDT"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DANIE DLA:"
+        android:id="@+id/addServTEXT"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/empty"
+        android:padding="10dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CZAS PRZYGOTOWANIA:"
+        android:id="@+id/addPrepTEXT"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/addServTEXT"
+        android:padding="10dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CZAS GOTOWANIA:"
+        android:id="@+id/addCookTEXT"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/addPrepTEXT"
+        android:padding="10dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/empty"
+        android:id="@+id/addServEDT"
+        android:hint="ile osób..."
+       android:layout_toRightOf="@id/addServTEXT"
+        android:background="#FFFFFF"
+        android:singleLine="true"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addServTEXT"
+        android:id="@+id/addPrepEDT"
+        android:hint="ile minut..."
+       android:layout_toRightOf="@id/addPrepTEXT"
+        android:background="#FFFFFF"
+        android:singleLine="true"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addPrepTEXT"
+        android:id="@+id/addCookEDT"
+        android:hint="ile minut..."
+        android:background="#FFFFFF"
+        android:layout_toRightOf="@id/addCookTEXT"
+        android:singleLine="true"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addImage"
+        android:layout_below="@id/addCookTEXT"
+        android:layout_centerHorizontal="true"
+        android:text="DODAJ FOTO 1"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_below="@id/addImage"
+        android:id="@+id/addFotoIMG"
+        android:scaleType="centerCrop"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/add"
+        android:layout_below="@id/addFotoIMG"
+        android:layout_alignParentRight="true"
+        android:text="DODAJ PRZEPIS"/>
+    <TextView
+        android:layout_below="@id/addFotoIMG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/add"
+        android:text="WSZYSTKO GOTOWE?"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"/>
+</RelativeLayout>
+</ScrollView>

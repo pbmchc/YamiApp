@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#669966">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_lbl"
+        android:text="LOGOWANIE"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"/>
+   <EditText
+       android:layout_below="@id/login_lbl"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/emailEDT"
+       android:hint="podaj email"
+       android:background="#FFFFFF"
+       android:padding="10dp"
+       android:layout_marginBottom="5dp"
+       android:singleLine="true"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailEDT"
+        android:hint="podaj haslo"
+        android:id="@+id/passwordEDT"
+        android:background="#FFFFFF"
+        android:padding="10dp"
+        android:layout_marginBottom="5dp"
+        android:singleLine="true"/>
+    <TextView
+        android:textSize="16dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/registerTXT"
+        android:layout_below="@id/passwordEDT"
+        android:layout_centerHorizontal="true"
+        android:text="Nie masz jeszcze konta? Kliknij tutaj!"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/registerTXT"
+        android:id="@+id/login"
+        android:textSize="16dp"
+        android:text="ZALOGUJ"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"/>
+</RelativeLayout>
